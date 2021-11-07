@@ -1,0 +1,37 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <title>Family Book</title>
+    <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="61zTGIEvQoL.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+    <button type="button" onclick="family()">Next</button>
+    <hr>
+    <script>
+    var names=[
+        "2. My Father (Prashant Nalawade)",
+        "3. My Mother (Srushti Nalawade)",
+        "4. My Sister (Sanika Nalawade)",
+        "5. Me (Siya Nalawade)",
+    ];
+    var images=[
+        "WhatsApp Image 2021-09-17 at 16.42.12.jpeg",
+        "WhatsApp Image 2021-09-17 at 16.40.11.jpeg",
+        "WhatsApp Image 2021-09-17 at 16.44.58.jpeg",
+        "WhatsApp Image 2021-09-17 at 16.42.56.jpeg"
+    ];
+    var i=0;
+    function family(){
+        document.getElementById("one").innerHTML=names[i];
+        document.getElementById("family_img").src=images[i];
+        i++;
+        if(i==4){
+            i=0;
+        }
+        }
+        </script>
+        </body>
+        </html>
